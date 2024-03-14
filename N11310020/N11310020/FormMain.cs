@@ -10,21 +10,28 @@ using System.Windows.Forms;
 
 namespace N11310020
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+            
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form form = new FormButton();
+            form.Show();
         }
     }
 }
