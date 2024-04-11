@@ -31,5 +31,31 @@ namespace N11310020
         {
             label1.Text = tbInput.Text;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a = Int32.Parse(textBox1.Text);
+            int b = Int32.Parse(textBox2.Text);
+            label4.Text = (a+b).ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int a = Int32.Parse(textBox3.Text);
+            int b = Int32.Parse(textBox4.Text);
+            label7.Text = (a*b).ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int a = Int32.Parse(textBox5.Text);
+            int b = Int32.Parse(textBox6.Text);
+            label8.Text = (a/b).ToString();
+        }
     }
 }
