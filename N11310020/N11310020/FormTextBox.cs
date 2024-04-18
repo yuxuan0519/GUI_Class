@@ -57,5 +57,20 @@ namespace N11310020
             int b = Int32.Parse(textBox6.Text);
             label8.Text = (a/b).ToString();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,5 +39,11 @@ namespace N11310020
             Form formTextBox = new FormTextBox();
             formTextBox.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form FFFFFF = new FFFFFF();
+            FFFFFF.Show();
+        }
     }
 }
