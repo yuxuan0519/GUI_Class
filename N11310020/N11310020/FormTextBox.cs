@@ -72,5 +72,17 @@ namespace N11310020
         {
 
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int a = Int32.Parse(textBox7.Text);
+            int b = Int32.Parse(textBox8.Text);
+            label13.Text = (a - b).ToString();
+        }
     }
 }
