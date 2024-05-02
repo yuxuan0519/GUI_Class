@@ -36,6 +36,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.bntTextBox = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +81,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(138, 310);
+            this.button1.Location = new System.Drawing.Point(104, 310);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 102);
             this.button1.TabIndex = 6;
@@ -113,11 +114,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(104, 57);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(144, 102);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Timer";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.bntTextBox);
             this.Controls.Add(this.button1);
@@ -139,6 +151,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button bntTextBox;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
