@@ -68,31 +68,32 @@ namespace N11310020
         }
 
 
-            private void textBox2_TextChanged(object sender, EventArgs e)
-            {
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
-            }
+        }
 
-            private void label4_Click(object sender, EventArgs e)
-            {
+        private void label4_Click(object sender, EventArgs e)
+        {
 
-            }
+        }
 
-            private void textBox1_TextChanged_1(object sender, EventArgs e)
-            {
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
 
-            }
+        }
 
-            private void label13_Click(object sender, EventArgs e)
-            {
+        private void label13_Click(object sender, EventArgs e)
+        {
 
-            }
+        }
 
-            private void button5_Click(object sender, EventArgs e)
-            {
-                int a = Int32.Parse(textBox7.Text);
-                int b = Int32.Parse(textBox8.Text);
-                label13.Text = (a - b).ToString();
-            }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int a = Int32.Parse(textBox7.Text);
+            int b = Int32.Parse(textBox8.Text);
+            label13.Text = (a - b).ToString();
+        }
+    }
         }
     

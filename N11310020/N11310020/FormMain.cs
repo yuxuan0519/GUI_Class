@@ -51,5 +51,11 @@ namespace N11310020
             Form form = new FormTimer();
             form.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form form = new FormGame();
+            form.Show();
+        }
     }
 }
