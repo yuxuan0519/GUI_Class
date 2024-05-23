@@ -57,5 +57,12 @@ namespace N11310020
             Form form = new FormGame();
             form.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form form = new FormCheckBox();
+            form.Show();
+
+        }
     }
 }

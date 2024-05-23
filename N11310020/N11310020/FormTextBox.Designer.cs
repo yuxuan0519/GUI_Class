@@ -336,7 +336,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextBox);
             this.Name = "FormTextBox";
-            this.Text = "FormToxtBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 
