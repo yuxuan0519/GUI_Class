@@ -39,6 +39,8 @@ namespace N11310020
 
     private void button1_Click(object sender, EventArgs e)
     {
+            String a = "", b = "";
+
             foreach (Control c in panel2.Controls)
             {
                 if (c is CheckBox)
@@ -46,25 +48,33 @@ namespace N11310020
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        MessageBox.Show(chk.Text);
+                        a += chk.Text + ",";
+                        //MessageBox.Show(chk.Text);
                     }
                 }
             }
             foreach (Control c in panel3.Controls)
-        {
+            {
             if (c is CheckBox)
             {
                 CheckBox chk = (CheckBox)c;
                 if (chk.Checked)
                 {
-                    MessageBox.Show(chk.Text);
+                        b += chk.Text + ",";
+                        //MessageBox.Show(chk.Text);
                 }
             }
         }
+            a = a.Remove(a.Length - 1, 1);
+            b = b.Remove(b.Length - 1, 1);
+            MessageBox.Show("主餐:" + a+ "\n飲料:" + b);
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
-
-
-}
 } 
 
 
