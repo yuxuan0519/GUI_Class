@@ -8,6 +8,7 @@ using System.Security.Authentication.ExtendedProtection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace N11310020
 { 
@@ -16,6 +17,9 @@ namespace N11310020
      public FormCheckBox()
         {
         InitializeComponent();
+
+            if (!File.Exists("OrderDate.csv"))
+                File.WriteAllText("OrderDate.csv", "時間,主食,配餐\n", Encoding.UTF8);
          }
 
     private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -48,7 +52,7 @@ namespace N11310020
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        a += chk.Text + ",";
+                        a += chk.Text + " ";
                         //MessageBox.Show(chk.Text);
                     }
                 }
@@ -60,13 +64,18 @@ namespace N11310020
                 CheckBox chk = (CheckBox)c;
                 if (chk.Checked)
                 {
-                        b += chk.Text + ",";
+                        b += chk.Text + " ";
                         //MessageBox.Show(chk.Text);
                 }
             }
         }
             a = a.Remove(a.Length - 1, 1);
             b = b.Remove(b.Length - 1, 1);
+
+            DateTime d=DateTime.Now;
+            string orderTime = d.ToString("yyy/MM/dd HH:mm:ss");
+
+            File.AppendAllText("OrderDate.csv", orderTime+","+ a+","+b);
             MessageBox.Show("主餐:" + a+ "\n飲料:" + b);
         }
 
